@@ -1,0 +1,86 @@
+header{
+  height: 94px;
+  background-color: #e40046;
+  border: 1px dashed red;
+}
+.p_header_top{
+  height: 30px;
+  background-color: #c7003d;
+}
+.p_header_top > .container{
+  border: 1px dashed black;
+  height: 100%;
+  max-width: 1225px !important;
+}
+
+.p_header_bottom{
+  height: 65px;
+}
+.p_header_bottom > .container{
+  border: 1px dashed black;
+  height: 100%;
+  max-width: 1225px !important;
+}
+.p_main{
+   background-color: #f7f7f7;
+  border: 1px dashed green;
+}
+.p_main1{
+  border: 1px dashed black;
+  height: 6673px;
+  max-width: 1225px !important
+}
+.p_main1_b1{
+  height: 816px;
+  border: 1px dashed orange;
+}
+.p_main1_b1 > div{
+  border: 1px dashed black;
+}
+.p_slider{
+  height: 345px;
+  border: 1px dashed orange;
+}
+
+.p_trending_products{
+  height: 450px;
+  border: 1px dashed red;
+}
+.carousel-indicators > button{
+  width: 160px !important;
+  height: 33px !important;
+  text-indent: 0px !important;
+ 
+}
+.carousel-indicators > button.active{
+  padding-bottom: 10px !important;
+  border-bottom: 2px solid black;
+}
+.carousel-item{
+  height: 299px !important;
+}
+.p_main2{
+  border: 1px dashed red;
+  height: 455px;
+  
+}
+
+footer{
+   background-color: #f7f7f7;
+  border: 1px dashed blue;
+}
+.p_foot1{
+  height: 550px;
+  border: dashed goldenrod;
+  max-width: 1225px !important;
+}
+.p_foot2{
+  height: 550px;
+  border: dashed brown;
+  max-width: 1225px !important;
+}
+.p_foot3{
+  height: 46px;
+  border: dashed blueviolet;
+  max-width: 1225px !important;
+}
