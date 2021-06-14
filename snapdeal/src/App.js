@@ -1,5 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+
 
 //this is a functional component
 function App() {
@@ -7,7 +9,22 @@ function App() {
     <div>
       <header>
         <div className="p_header_top">
-          <div className="container"></div>
+          <div className="container p-0">
+            <ul className="nav float-end">
+              <li className="nav-item">
+                <a className="nav-link p-1 ps-3 active text-white" aria-current="page" href="#"> Gift Cards </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link p-1 ps-3 text-white" href="#">Help Center</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link p-1 ps-3 text-white" href="#"> Sell On Snapdeal</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link p-1 ps-3 text-white" href="#" ><FontAwesomeIcon icon={faMobileAlt} />Download App</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="p_header_bottom">
           <div className="container"></div>
@@ -23,7 +40,7 @@ function App() {
                 <div className="col-10">
                   <div id="carouselExampleIndicators" className="carousel slide h-100" data-bs-ride="carousel">
                     <div className="bg-white carousel-indicators m-0 justify-content-center">
-                      <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active m-0" aria-current="true" aria-label="Slide 1">Men's Apparel</button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active m-0" aria-current="true" aria-label="Slide 1">Men's Apparel</button>
                       <button className="m-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">Sarees</button>
                       <button className="m-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">Kid's Apparel</button>
                       <button className="m-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">Men's Sports Wear</button>
@@ -31,19 +48,19 @@ function App() {
                     </div>
                     <div className="carousel-inner h-100">
                       <div className="carousel-item  active">
-                        <img src="./images/slider/1.jpg" className="h-100" alt="..." />
+                        <img src="./images/slider/1.jpg" className="h-100 w-100" alt="..." />
                       </div>
                       <div className="carousel-item">
-                        <img src="./images/slider/2.jpg" className="h-100" alt="..." />
+                        <img src="./images/slider/2.jpg" className="h-100 w-100 " alt="..." />
                       </div>
                       <div className="carousel-item">
-                        <img src="./images/slider/3.jpg" className="h-100" alt="..." />
+                        <img src="./images/slider/3.jpg" className="h-100 w-100" alt="..." />
                       </div>
                       <div className="carousel-item">
-                        <img src="./images/slider/4.jpg" className="h-100" alt="..." />
+                        <img src="./images/slider/4.jpg" className="h-100 w-100" alt="..." />
                       </div>
                       <div className="carousel-item">
-                        <img src="./images/slider/5.jpg" className="h-100" alt="..." />
+                        <img src="./images/slider/5.jpg" className="h-100 w-100" alt="..." />
                       </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

@@ -1,3 +1,7 @@
+body{
+  font-family: 'RobotoRegular',sans-serif;
+  font-size: 0.8em;
+}
 header{
   height: 94px;
   background-color: #e40046;
