@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faMobileAlt,faShoppingCart,faUser } from '@fortawesome/free-solid-svg-icons'
 
 
 //this is a functional component
@@ -10,6 +10,7 @@ function App() {
       <header>
         <div className="p_header_top">
           <div className="container p-0">
+            <span className="text-white">India's Fastest Online Shopping Destination</span>
             <ul className="nav float-end">
               <li className="nav-item">
                 <a className="nav-link p-1 ps-3 active text-white" aria-current="page" href="#"> Gift Cards </a>
@@ -27,7 +28,29 @@ function App() {
           </div>
         </div>
         <div className="p_header_bottom">
-          <div className="container"></div>
+          <div className="container">
+            <div className="row">
+              <div className="col-2">
+                <a href="#" className="btn  mt-3 p-0">
+                  <img src="./logo.png" />
+                </a>
+              </div>
+              <div className="col-7">
+                <form className="mt-3 p_hfrom  bg-white"></form>
+              </div>
+              <div className="col-3">
+                <ul className="nav p_hbot_nav float-end">
+                  <li className="nav-item border-start border-end ">
+                    <a className="nav-link text-white" aria-current="page" href="#">Cart<FontAwesomeIcon icon={faShoppingCart} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link text-white p_bl" href="#">Sign in <FontAwesomeIcon icon={faUser} /></a>
+                  </li>
+                
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
 
       </header>

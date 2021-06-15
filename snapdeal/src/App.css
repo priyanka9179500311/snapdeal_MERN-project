@@ -7,6 +7,21 @@ header{
   background-color: #e40046;
   border: 1px dashed red;
 }
+.p_hfrom{
+  height: 37px;
+  width: 95%;
+  border-radius: 1px;
+}
+.p_hbot_nav a{
+  display: block;
+  padding: 20px 40px 20px 40px;
+}
+.p_hbot_nav li:first-child{
+  border-color: rgba(0,0,0,0.1) !important;
+}
+.p_bl:hover{
+  background: #333;
+}
 .p_header_top{
   height: 30px;
   background-color: #c7003d;
@@ -14,7 +29,7 @@ header{
 .p_header_top > .container{
   border: 1px dashed black;
   height: 100%;
-  max-width: 1225px !important;
+  max-width: 1245px !important;
 }
 
 .p_header_bottom{
@@ -23,7 +38,7 @@ header{
 .p_header_bottom > .container{
   border: 1px dashed black;
   height: 100%;
-  max-width: 1225px !important;
+  max-width: 1245px !important;
 }
 .p_main{
    background-color: #f7f7f7;
@@ -32,7 +47,7 @@ header{
 .p_main1{
   border: 1px dashed black;
   height: 6673px;
-  max-width: 1225px !important
+  max-width: 1245px !important
 }
 .p_main1_b1{
   height: 816px;
