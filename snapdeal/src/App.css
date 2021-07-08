@@ -1,23 +1,191 @@
+/****************************** Home Css Start*******************************/
+.tbdr{
+  border:1px dashed #000;
+  height: 100% !important;
+}
+a:focus{
+  box-shadow: none !important;
+}
 body{
   font-family: 'RobotoRegular',sans-serif;
   font-size: 0.8em;
+  background: #f7f7f7;
+}
+#carouselExampleIndicators{
+  height: 96% !important;
+}
+.p_sliderrbox{
+  width: 226px;
+  height: 328px;
+  transition: all linear 1s;
+  transform-origin: center 500px;
+  opacity: 1;
+  visibility: visible;
+  transform: rotateZ(0deg);
+}
+.p_sliderrbox >div{
+  height: 159px;
+}
+.pincodeBox{
+  z-index: 1000;
+}
+.p_pinimg{
+  width: 143px;
+  height: 137px;
+  background-image: url(https://i1.sdlcdn.com/img/artboardNext.png);
+}
+.p_pinimg2{
+  background-position: -144px 0px;
+  width: 95% !important;
+}
+.loginBox{
+  z-index: 1000;
 }
 header{
   height: 94px;
   background-color: #e40046;
   border: 1px dashed red;
+  transition: all linear 0.2s;
+  z-index: 100000;
 }
-.p_hfrom{
+.moveup{
+  transform: translateY(-30px);
+}
+.aside{
+  z-index: 1000;
+  top: 50px;
+}
+#carouselExampleIndicators .carousel-control-next:hover,#carouselExampleIndicators .carousel-control-prev:hover{
+  background: #000;
+}
+#carouselExampleIndicators .carousel-control-next,#carouselExampleIndicators .carousel-control-prev{
+  height: 16% !important;
+  width: 7%;
+  border-radius: 300px !important;
+  background:#fff;
+  margin-top: 124px;
+}
+.asidenav > li:hover > a{
+  background: #fafafa;
+  color:#333;
+  border-left:3px solid #e40046;
+  border-top:1px solid #e5e5e5;
+  border-bottom:1px solid #e5e5e5;
+}
+.asidenav > li:hover >div{
+  display: block;
+}
+.asidenav_righbox{
+  width: 900px;
+  height: 550px;
+  background: red;
+  z-index: 1000;
+  left: 190px;
+  display: none;
+}
+.asidenav a{
+  color: #333;
+  border-left: 3px solid #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.asidenav a:hover{
+  background: #fafafa;
+  color: #333;
+  border-left: 3px solid #e40046;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.p_hfrom{ 
   height: 37px;
   width: 95%;
   border-radius: 1px;
+  background: #f8f8f8;
+}
+.inputBox{
+  width: 555px;
+  z-index: 1000;
+  box-shadow:0px 0px 3px rgba(0,0,0,0.5);
+  display: none;
+}
+.cartModel .modal-body li a{
+  color: #333;
+  text-decoration: none;
+}
+.cartModel .modal-body li{
+  display: block;
+  padding: 10px;/*Remember the TRBL formular */
+  width: 260px;
+  float: left;
+}
+.inputBox h6{
+  color:#999;
+}
+.inputBox ul a{
+  padding-left: 24px;
+  color:#666 !important;
+}
+.inputBox ul a:hover{
+  background: #f6f6f6 !important;
+}
+.p_hfrom input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #8f8f8f;
+}
+.p_hfrom input{
+  border: none !important;
+  background: #f8f8f8 !important;
+  color: #8f8f8f !important;
+}
+.p_hfrom input:focus{
+  box-shadow: none !important;
+  border: none !important;
+}
+.p_hfrom input:focus + .inputBox{
+  display: block;
 }
 .p_hbot_nav a{
   display: block;
   padding: 20px 40px 20px 40px;
 }
-.p_hbot_nav li:first-child{
+.p_hbot_nav > li:first-child{
   border-color: rgba(0,0,0,0.1) !important;
+}
+.p_hbot_nav > li{
+  position: relative;
+}
+.p_hbot_nav > li:nth-child(2):hover >a{
+  background: #333;
+  transition: none !important ;
+}
+.fauserbox{
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 40px;
+}
+.p_hbot_nav > li:hover ul{
+  display: block;
+}
+.p_hbot_nav > li ul{
+  position: absolute;
+  top: 62px;
+  right: 0px;
+  width: 215px;
+  height: 275px;
+  background: #333;
+  z-index: 1000;
+  border-top-left-radius:4px ;
+  display: none;
+}
+.p_bl{
+  margin-top: 11px;
+  text-decoration: none;
 }
 .p_bl:hover{
   background: #333;
@@ -31,9 +199,14 @@ header{
   height: 100%;
   max-width: 1245px !important;
 }
-
+.asidenav2 a{
+  /*TRBL*/
+  padding: 5px 10px 5px 10px !important;
+}
 .p_header_bottom{
   height: 65px;
+  z-index: 2000;
+  background: #e40046 ;
 }
 .p_header_bottom > .container{
   border: 1px dashed black;
@@ -43,6 +216,7 @@ header{
 .p_main{
    background-color: #f7f7f7;
   border: 1px dashed green;
+  margin-top: 94px;
 }
 .p_main1{
   border: 1px dashed black;
@@ -51,7 +225,7 @@ header{
 }
 .p_main1_b1{
   height: 816px;
-  border: 1px dashed orange;
+  border: 1px dashed red;
 }
 .p_main1_b1 > div{
   border: 1px dashed black;
@@ -60,16 +234,14 @@ header{
   height: 345px;
   border: 1px dashed orange;
 }
-
 .p_trending_products{
   height: 450px;
   border: 1px dashed red;
 }
 .carousel-indicators > button{
   width: 160px !important;
-  height: 33px !important;
+  height: 23px !important;
   text-indent: 0px !important;
- 
 }
 .carousel-indicators > button.active{
   padding-bottom: 10px !important;
@@ -79,27 +251,203 @@ header{
   height: 299px !important;
 }
 .p_main2{
-  border: 1px dashed red;
   height: 455px;
-  
 }
-
+footer a{
+  color: #777 !important;
+}
 footer{
-   background-color: #f7f7f7;
+  background-color: #f7f7f7;
   border: 1px dashed blue;
+  color: #777 !important;
+}
+.p_fspritebox1{
+  width: 53px;
+  height: 52px;
+  border: 1px dashed orange;
+  background-image: url('./assets/s.png');
+  background-position: -5px -63px;
+}
+.p_trustpay{
+  width: 45px;
+  height: 50px;
+  background-position: -59px -63px !important;
+}
+.p_helpcenter{
+  background-position: -106px -63px !important;
+}
+.p_shopOnGo{
+  width: 35px;
+  background-position: -160px -63px !important;
+}
+.footer_socialicon li{
+  margin-right: 15px;
+}
+.footer_socialicon a{
+  width: 30px;
+  height: 30px;
+  background-position: 5px -35px;
+  background-image: url('https://i1.sdlcdn.com/img/newHomePageIcons@1x.png');
+}
+.footer_socialicon li:nth-child(2) a{
+  background-position: -25px -35px;
+}
+.footer_socialicon li:nth-child(3) a{
+  background-position: -87px -35px;
+}
+.footer_socialicon li:nth-child(4) a{
+  background-position: -116px -35px;
+}
+.footer_socialicon li:last-child a{
+  background-position: -145px -35px;
 }
 .p_foot1{
   height: 550px;
-  border: dashed goldenrod;
-  max-width: 1225px !important;
+  border: 1px dashed red;
+}
+.p_foot1_cont2{
+  max-width: 1230px;
+}
+.p_foot1_cont2 a{
+  font-size: 12px;
+  padding: 0px;
+  color: #a5a5a5;
+}
+.p_foot1_cont2 a:hover{
+  text-decoration: underline;
 }
 .p_foot2{
-  height: 550px;
-  border: dashed brown;
-  max-width: 1225px !important;
+  height: 997px;
+  border: 1px dashed green;
+  max-width: 1245px !important;
+}
+.p_foot2 li:not(:first-child) a{
+  color:#ccc;
+}
+.p_foot2 a:hover{
+  text-decoration: underline !important;
+}
+.p_foot2 a{
+  color: #333;
+  text-decoration: none;
+}
+.p_foot2 li:not(:first-child) a{
+  
+}
+.p_foot2 li:not(:first-child) a:hover{
+  
+}
+.p_slider > .col-9{
+  width: 76% !important;
+}
+.p_slider > .col-3{
+  width: 24% !important;
 }
 .p_foot3{
   height: 46px;
-  border: dashed blueviolet;
-  max-width: 1225px !important;
+  border: 1px dashed orange;
+  max-width: 1245px !important;
 }
+.swiperbox{
+  background-color: red;
+  transform-origin: 50% 200%;
+}
+
+/* Heart Animation*/
+.a_heart{
+  animation-name: heartbeat;
+ animation-duration: 2.5s;
+  animation-iteration-count: infinite; 
+}
+@keyframes heartbeat{
+  0%{
+    transform:scale(1)
+  }
+  5%{
+    transform:scale(1.2)
+  }
+  10%{
+    transform:scale(1.1) 
+  }
+  15%{
+    transform:scale(1.25)
+  }
+  50%{
+    transform:scale(1)
+  }
+  100%{
+    transform:scale(1)
+  }
+}
+.dld_banner{
+  background-image: url('https://i1.sdlcdn.com/img/appScreenshot@1x.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.dld_banner_right{
+  background-image: url('https://i1.sdlcdn.com/img/leaves1x.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.dwnlodbtn{
+  background-image: url('https://i1.sdlcdn.com/img/newHomePageIcons@1x.png');
+}
+.apple{
+  
+  background-position: -4px 86px;
+}
+.google{
+  background-position:-4px 45px !important;
+}
+.carousel_trending a{
+  position: relative;
+  z-index: 10000;
+  padding: 20px !important;
+}
+.carousel_trending a:hover{
+  /**XYBSC**/
+  box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.2) !important;
+  
+}
+.p_faArrowUp:hover{
+  opacity: 0.9;
+}
+.p_faArrowUp{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 3.5em;
+  bottom: 50px;
+  right: 34px;
+  opacity: 0.5;
+}
+.p_faArrowUp .p_arrowUp{
+  position: relative;
+  left: -3px;
+  bottom: 15px;
+  font-size: 0.8em;
+}
+/****************************** Home Css End*******************************/
+
+/****************************** Detail Css Start*******************************/
+.p_dtl_main{
+  max-width: 1245px !important;
+  margin-top: 92px;
+}
+.p_dtl_top_brdcrmd{
+  height: 40px;
+}
+.p_dtl_prodcont{
+  height: 680px !important;
+  background: red;
+}
+.p_dtl_prodDetBox{
+  height: 2700px;
+}
+.p_dtl_googleaddSenseBox{
+  height: 275px !important;
+}
+.p_dtl_prodDetBoxBottom{
+  height: 2500px;
+}
+/****************************** Detail Css End*******************************/
